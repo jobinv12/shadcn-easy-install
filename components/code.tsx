@@ -56,7 +56,7 @@ export default function Code() {
             size="icon"
             className="text-zinc-500 hover:text-zinc-900 ml-auto"
             onClick={handleCopy(
-              installCommands[packageName],
+              installCommands[packageName as keyof typeof installCommands],
               selectedComponents
             )}
           >
@@ -80,7 +80,7 @@ export default function Code() {
             <ScrollArea>
               <div className="flex items-center justify-between bg-zinc-900 text-white font-mono text-sm px-4 py-2 rounded-lg">
                 <span className="truncate">
-                  {installCommands[packageName]}{" "}
+                  {installCommands[packageName as keyof typeof installCommands]}{" "}
                   {component.length > 0 ? selectedComponents : ""}
                 </span>
               </div>
