@@ -8,15 +8,17 @@ import { Form, FormControl, FormField, FormLabel } from "@/components/ui/form";
 import { useCreateCmd } from "@/stores/cmd";
 
 const componentsList = [
-  { id: "accordian", label: "Accordian" },
+  { id: "accordion", label: "Accordion" },
   { id: "alert", label: "Alert" },
   { id: "alert-dialog", label: "Alert Dialog" },
+  { id: "aspect-ratio", label: "Aspect Ratio" },
   { id: "avatar", label: "Avatar" },
   { id: "badge", label: "Badge" },
   { id: "breadcrumb", label: "Breadcrumb" },
   { id: "button", label: "Button" },
   { id: "calendar", label: "Calendar" },
   { id: "card", label: "Card" },
+  { id: "carousel", label: "Carousel" },
   { id: "chart", label: "Chart" },
   { id: "checkbox", label: "Checkbox" },
   { id: "collapsible", label: "Collapsible" },
@@ -25,7 +27,7 @@ const componentsList = [
   { id: "dialog", label: "Dialog" },
   { id: "drawer", label: "Drawer" },
   { id: "dropdown-menu", label: "Dropdown Menu" },
-  { id: "form", label: "Form" },
+  { id: "form", label: "React Hook Form" },
   { id: "hover-card", label: "Hover Card" },
   { id: "input", label: "Input" },
   { id: "input-otp", label: "Input OTP" },
