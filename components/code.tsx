@@ -28,22 +28,22 @@ export default function Code() {
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto rounded-xl p-1">
+    <div className="w-full max-w-xl mx-auto rounded-xl p-2 bg-gray-300">
       <Tabs
         defaultValue="pnpm"
         value={packageName}
         onValueChange={setCurrentPackage}
       >
-        <div className="flex items-center justify-start gap-4 mb-4">
+        <div className="flex items-center justify-start gap-4 mb-4 border-b-1 border-gray-400">
           <div className="flex items-center gap-4 flex-grow">
-            <TerminalIcon className="h-4 w-4 bg-gray-500" />
+            <TerminalIcon className="h-4 w-4 bg-gray-400" />
 
-            <TabsList className="bg-transparent gap-2">
+            <TabsList className="bg-transparent gap-1">
               {Object.keys(installCommands).map((pkg) => (
                 <TabsTrigger
                   key={pkg}
                   value={pkg}
-                  className="px-5 py-1 rounded data-[state=active]:bg-white data-[state=active]:text-black"
+                  className="px-2 py-1 rounded data-[state=active]:bg-gray-300 data-[state=active]:text-black data-[state=active]:border-white"
                 >
                   {pkg}
                 </TabsTrigger>
@@ -78,7 +78,7 @@ export default function Code() {
             }}
           >
             <ScrollArea>
-              <div className="flex items-center justify-between bg-zinc-900 text-white font-mono text-sm px-4 py-2 rounded-lg">
+              <div className="flex items-center justify-between bg-gray-300 text-black font-mono text-sm px-4 py-2 rounded-lg">
                 <span className="truncate">
                   {installCommands[packageName as keyof typeof installCommands]}{" "}
                   {component.length > 0 ? selectedComponents : ""}
