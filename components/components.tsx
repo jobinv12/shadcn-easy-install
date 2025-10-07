@@ -16,6 +16,7 @@ const componentsList = [
   { id: "badge", label: "Badge" },
   { id: "breadcrumb", label: "Breadcrumb" },
   { id: "button", label: "Button" },
+  { id: "button-group", label: "Button Group" },
   { id: "calendar", label: "Calendar" },
   { id: "card", label: "Card" },
   { id: "carousel", label: "Carousel" },
@@ -27,10 +28,15 @@ const componentsList = [
   { id: "dialog", label: "Dialog" },
   { id: "drawer", label: "Drawer" },
   { id: "dropdown-menu", label: "Dropdown Menu" },
+  { id: "empty", label: "Empty" },
+  { id: "field", label: "Field" },
   { id: "form", label: "React Hook Form" },
   { id: "hover-card", label: "Hover Card" },
   { id: "input", label: "Input" },
+  { id: "input-group", label: "Input Group" },
   { id: "input-otp", label: "Input OTP" },
+  { id: "item", label: "Item" },
+  { id: "kbd", label: "Kbd" },
   { id: "label", label: "Label" },
   { id: "menubar", label: "Menubar" },
   { id: "navigation-menu", label: "Navigation Menu" },
@@ -47,6 +53,7 @@ const componentsList = [
   { id: "skeleton", label: "Skeleton" },
   { id: "slider", label: "Slider" },
   { id: "sonner", label: "Sonner" },
+  { id: "spinner", label: "Spinner" },
   { id: "switch", label: "Switch" },
   { id: "table", label: "Table" },
   { id: "tabs", label: "Tabs" },
@@ -95,11 +102,11 @@ export default function Components() {
 
             return (
               <FormControl>
-                <div className="grid grid-cols-5 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
                   {componentsList.map((component) => (
                     <div
                       key={component.id}
-                      className="flex items-center space-x-2"
+                      className="flex items-center space-x-2 transition-all duration-200"
                     >
                       <Checkbox
                         id={component.id}
