@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shadcn-easy-install",
+  title: "shadcn-ui easy install",
   description: "Install shadcn components easily",
 };
 
