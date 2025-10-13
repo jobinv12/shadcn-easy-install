@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/footer";
 import "./globals.css";
+import { Partytown } from "partytown";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "shadcn/ui easy install",
   description: "Install shadcn components easily",
+  appleWebApp: {
+    title: "apple-mobile-web-app-title",
+    capable: true,
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <Partytown forward={["dataLayer.push"]} />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
