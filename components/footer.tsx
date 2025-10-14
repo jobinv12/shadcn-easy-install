@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="text-white justify-center text-center bg-black fixed inset-x-0 bottom-0 p-4">
-      Contribute on
+      Contribute on{" "}
       <Link href={githubUrl ?? "#"} target="_blank" rel="noopener noreferrer">
         Github
       </Link>
