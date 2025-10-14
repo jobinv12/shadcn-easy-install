@@ -61,9 +61,15 @@ export default function Code() {
             )}
           >
             {copiedText ? (
-              <ClipboardCheckIcon className="h4 w-4 text-green-400" />
+              <ClipboardCheckIcon
+                className="h4 w-4 text-green-400"
+                aria-label="clipboard-copied"
+              />
             ) : (
-              <ClipboardIcon className="h-4 w-4" />
+              <ClipboardIcon
+                className="h-4 w-4"
+                aria-label="clipboard-not-copied"
+              />
             )}
           </Button>
         </div>
