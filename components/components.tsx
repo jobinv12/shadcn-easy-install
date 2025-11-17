@@ -40,6 +40,7 @@ const componentsList = [
   { id: "label", label: "Label" },
   { id: "menubar", label: "Menubar" },
   { id: "navigation-menu", label: "Navigation Menu" },
+  { id: "native-select", label: "Native Select" },
   { id: "pagination", label: "Pagination" },
   { id: "popover", label: "Popover" },
   { id: "progress", label: "Progress" },
