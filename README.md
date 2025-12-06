@@ -7,3 +7,7 @@ By selecting the components, the tool generates a command for all supported pack
 ### Demo
 
 [shadcn-easy-install](shadcn-easy-install.vercel.app)
+
+### In Progress
+
+[ ] Dark Mode
