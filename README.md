@@ -11,3 +11,4 @@ By selecting the components, the tool generates a command for all supported pack
 ### In Progress
 
 [ ] Dark Mode
+[ ] Migrate to Tanstack Start
