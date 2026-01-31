@@ -26,6 +26,7 @@ const componentsList = [
   { id: "command", label: "Command" },
   { id: "context-menu", label: "Context Menu" },
   { id: "dialog", label: "Dialog" },
+  { id: "direction", label: "direction" },
   { id: "drawer", label: "Drawer" },
   { id: "dropdown-menu", label: "Dropdown Menu" },
   { id: "empty", label: "Empty" },
@@ -86,7 +87,7 @@ export default function Components() {
 
             const handleToggle = (
               checked: boolean,
-              component: { id: string; label: string }
+              component: { id: string; label: string },
             ) => {
               const updated = checked
                 ? [...selected, component.id]
