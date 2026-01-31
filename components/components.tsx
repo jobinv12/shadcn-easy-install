@@ -26,7 +26,7 @@ const componentsList = [
   { id: "command", label: "Command" },
   { id: "context-menu", label: "Context Menu" },
   { id: "dialog", label: "Dialog" },
-  { id: "direction", label: "direction" },
+  { id: "direction", label: "Direction" },
   { id: "drawer", label: "Drawer" },
   { id: "dropdown-menu", label: "Dropdown Menu" },
   { id: "empty", label: "Empty" },
