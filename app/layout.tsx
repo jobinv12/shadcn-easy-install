@@ -5,8 +5,6 @@ import "./globals.css";
 import { Partytown } from "@qwik.dev/partytown/react";
 import Head from "next/head";
 import Navbar from "../components/navbar";
-import Script from "next/script";
-import BmcWidget from "@/components/bmc-widget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
