@@ -31,7 +31,6 @@ const componentsList = [
   { id: "dropdown-menu", label: "Dropdown Menu" },
   { id: "empty", label: "Empty" },
   { id: "field", label: "Field" },
-  { id: "form", label: "React Hook Form" },
   { id: "hover-card", label: "Hover Card" },
   { id: "input", label: "Input" },
   { id: "input-group", label: "Input Group" },

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "shadcn/ui easy install",
-  description: "Install shadcn components easily",
+  description: "Shadcn cli builder",
   appleWebApp: {
     title: "apple-mobile-web-app-title",
     capable: true,
