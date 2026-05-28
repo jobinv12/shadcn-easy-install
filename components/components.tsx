@@ -23,6 +23,7 @@ const componentsList = [
   { id: "chart", label: "Chart" },
   { id: "checkbox", label: "Checkbox" },
   { id: "collapsible", label: "Collapsible" },
+  { id: "combobox", label: "Combobox" },
   { id: "command", label: "Command" },
   { id: "context-menu", label: "Context Menu" },
   { id: "dialog", label: "Dialog" },
@@ -39,8 +40,8 @@ const componentsList = [
   { id: "kbd", label: "Kbd" },
   { id: "label", label: "Label" },
   { id: "menubar", label: "Menubar" },
-  { id: "navigation-menu", label: "Navigation Menu" },
   { id: "native-select", label: "Native Select" },
+  { id: "navigation-menu", label: "Navigation Menu" },
   { id: "pagination", label: "Pagination" },
   { id: "popover", label: "Popover" },
   { id: "progress", label: "Progress" },
@@ -107,8 +108,7 @@ export default function Components() {
                   {componentsList.map((component) => (
                     <div
                       key={component.id}
-                      className="flex items-center space-x-2 transition-all duration-200"
-                    >
+                      className="flex items-center space-x-2 transition-all duration-200">
                       <Checkbox
                         id={component.id}
                         checked={selected.includes(component.id)}
