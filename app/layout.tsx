@@ -5,6 +5,7 @@ import "./globals.css";
 import { Partytown } from "@qwik.dev/partytown/react";
 import Head from "next/head";
 import Navbar from "../components/navbar";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,10 +35,10 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <Partytown forward={["dataLayer.push"]} />
+        <Analytics />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
