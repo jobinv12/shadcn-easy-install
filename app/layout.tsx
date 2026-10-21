@@ -35,10 +35,10 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <Partytown forward={["dataLayer.push"]} />
-        <Analytics />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Analytics />
         <Navbar />
         <main>{children}</main>
         <Footer />
