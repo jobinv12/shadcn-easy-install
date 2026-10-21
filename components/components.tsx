@@ -24,6 +24,7 @@ const componentsList = [
   { id: "carousel", label: "Carousel" },
   { id: "chart", label: "Chart" },
   { id: "checkbox", label: "Checkbox" },
+  { id: "code-block", label: "Code Block" },
   { id: "collapsible", label: "Collapsible" },
   { id: "combobox", label: "Combobox" },
   { id: "command", label: "Command" },
@@ -71,6 +72,7 @@ const componentsList = [
   { id: "toggle", label: "Toggle" },
   { id: "toggle-group", label: "Toggle Group" },
   { id: "tooltip", label: "Tooltip" },
+  { id: "trace", label: "Trace" },
 ];
 
 export default function Components() {
